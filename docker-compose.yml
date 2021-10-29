@@ -1,6 +1,6 @@
 services:
     orders_generator_workspace:
-        build: node:14.17.6
+        build: ./
         container_name: orders_generator_workspace
         networks:
             - laradock_frontend
