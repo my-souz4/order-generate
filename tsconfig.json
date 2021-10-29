@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+		"moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+		"noImplicitAny": true,
+    "skipLibCheck": true,
+		"module": "CommonJS",
+		"target": "ES2021",
+		"sourceMap": true,
+		"allowJs": true,
+    "strict": false,
+		"baseUrl": ".",
+		"paths": {
+			"@src/*": ["src/*"],
+			"@application/*": ["src/application/*"],
+			"@channels/*": ["src/channels/*"],
+			"@config/*": ["src/config/*"],
+			"@domain/*": ["src/domain/*"],
+			"@infrastructure/*": ["src/infrastructure/*"],
+			"@jobs/*": ["src/infrastructure/jobs/*"],
+			"@presentation/*": ["src/presentation/*"]
+		}
+  },
+  "include": [
+    "src"
+  ],
+	"exclude": [
+		"src/tests/coverage",
+		"dist"
+	]
+}
