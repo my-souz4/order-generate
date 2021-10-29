@@ -5,17 +5,17 @@ const generateClient = () => {
     name: faker.name.firstName() + ' ' + faker.name.lastName(),
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
-    cpf: faker.datatype.number(99999999999),
+    cpf: faker.datatype.number(99999999999).toString(),
     address: {
       street: faker.address.streetName(),
-      number: faker.datatype.number(999),
+      number: faker.datatype.number(999).toString(),
       complement: faker.address.secondaryAddress(),
       postcode: faker.address.zipCode(),
       district: faker.datatype.string(),
       city: faker.address.city(),
       state: faker.address.state(),
-      latitude: faker.address.latitude(),
-      longitude: faker.address.longitude()
+      latitude: Number(faker.address.latitude()),
+      longitude: Number(faker.address.longitude())
     }
   }
 }
@@ -25,17 +25,17 @@ const generateStore = () => {
     name: faker.name.firstName() + ' ' + faker.name.lastName(),
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
-    cpf: faker.datatype.number(99999999999),
+    cpf: faker.datatype.number(99999999999).toString(),
     address: {
       street: faker.address.streetName(),
-      number: faker.datatype.number(999),
+      number: faker.datatype.number(999).toString(),
       complement: faker.address.secondaryAddress(),
       postcode: faker.address.zipCode(),
       district: faker.datatype.string(),
       city: faker.address.city(),
       state: faker.address.state(),
-      latitude: faker.address.latitude(),
-      longitude: faker.address.longitude()
+      latitude: Number(faker.address.latitude()),
+      longitude: Number(faker.address.longitude())
     }
   }
 }

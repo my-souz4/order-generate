@@ -17,9 +17,9 @@ app.get('/new-orders', (_req, res) => {
       rabbitMQServer.publish('amq.direct', 'marketplace', JSON.stringify(data))
 
       console.log('Sended to queue')
-    })
 
-  res.send('Ok')
+      res.send('Ok')
+    })
 })
 
 app.listen(3569)
