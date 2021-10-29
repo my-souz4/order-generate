@@ -43,7 +43,7 @@ const generateStore = () => {
 const generateOrder = (items: number) => {
   return {
     identifier: '#' + faker.datatype.number(999999),
-    total: faker.commerce.price(200, 1000, 2, 'R$'),
+    total: faker.datatype.number(1000) + 20,
     status: 'WAITING_FOR_A_TAKER',
     items: generateItems(items)
   }
@@ -54,7 +54,7 @@ const generateItems = (count: number) => {
   
   for (let i = 0; i < count; i++) {
     const item = {
-      price: faker.commerce.price(200, 1000, 2, 'R$'),
+      price: faker.datatype.number(1000) + 20,
       item_photo_path: faker.image.imageUrl(),
       quantity: faker.datatype.number(10),
       name: faker.commerce.productName(),
