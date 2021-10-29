@@ -1,0 +1,14 @@
+services:
+    orders_generator_workspace:
+        build: node:14.17.6
+        container_name: orders_generator_workspace
+        networks:
+            - laradock_frontend
+        ports:
+            - 3569:3569
+        command: npm run serve:dev
+
+networks:
+    laradock_frontend:
+            external:
+               name: laradock_frontend
