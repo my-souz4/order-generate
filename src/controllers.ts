@@ -6,6 +6,7 @@ const generateClient = () => {
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
     cpf: faker.datatype.number(99999999999).toString(),
+    logo_path: faker.image.imageUrl(),
     address: {
       street: faker.address.streetName(),
       number: faker.datatype.number(999).toString(),

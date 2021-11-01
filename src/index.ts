@@ -1,5 +1,4 @@
 import express from 'express'
-import faker from 'faker'
 import cors from 'cors'
 
 import { rabbitMQServer } from './RabbitMQServer'
