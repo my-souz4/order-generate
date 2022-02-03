@@ -6,7 +6,7 @@ class RabbitMQServer {
 	public channel: Channel
 
 	public async start() {
-		this.connection = await connect('amqp://guest:guest@rabbitmq.shoppingdtudo.info:5672')
+		this.connection = await connect('amqp://guest:guest@161.35.143.186:5672')
 		this.channel = await this.connection.createChannel()
 	}
 
